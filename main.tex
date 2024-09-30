@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage[spanish] {babel}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\theoremstyle{plain}
+\newtheorem{theorem} {Teorema} [section]
+\newtheorem{corollary}{Corolario}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+\usepackage{framed}
+
+\title{tarea com-117}
+\author{Cesar Lucas Mamani Posto}
+\date{September 2024}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   Integral Definida
+\end{center}
+
+
+\begin{framed}
+\begin{theorem}
+\begin{enumerate}
+    \item $\int_a^b f(x) dx = \int_a^b f(s) ds$ (variable muda)
+    \item Si $b > a$, entonces $\int_a^b f(x) dx = -\int_b^a f(x) dx$
+    \item Si $f(a)$ existe, entonces $\int_a^a f(x) dx = 0$
+\end{enumerate}
+\end{theorem}
+\end{framed}
+
+\begin{center}
+    \includegraphics[scale=0.1]{2.jpg}
+\end{center}
+
+
+Como es evidente, la integral definida resuelve el problema del área bajo la curva; sin embargo, es muy importante aclarar que la integral definida se utiliza para muchas otras aplicaciones físicas, económicas y matemáticas
+
+\begin{framed}
+\begin{theorem}
+Si $f$ es una función integrable y $f(x) \geq 0$ para todo $x$ en $[a,b]$, entonces el área bajo la curva trazada por $f$ entre $a$ y $b$ es
+\begin{center}
+    $A = \int_a^b f(x) \, dx$
+\end{center}
+\end{theorem}
+\end{framed}
+\begin{center}
+    \includegraphics[scale=0.5]{1.jpg}
+\end{center}
+
+No todas las funciones son integrables, pero las continuas sí lo son
+
+\begin{framed}
+\begin{theorem}
+    Si $f$ es continua en $[a,b]$, entonces $f$ es integrable en $[a,b]$
+\end{theorem}
+\end{framed}
+
+
+\begin{framed}
+\begin{theorem}
+    $\int_a^b c dx = c(b - a)$ donde $c$ es una constante
+\end{theorem}
+\end{framed}
+
+
+\begin{framed}
+\begin{theorem}
+Si $f$ es integrable en $[a,b]$ y $c$ es un número real arbitrario, entonces $cf$ es integrable en $[a,b]$ y 
+\begin{center}
+    $\int_a^b cf(x) dx = c \int_a^b f(x) dx$
+\end{center}
+\end{theorem}
+\end{framed}
+
+
+\begin{framed}
+\begin{theorem}
+Si $f$ y $g$ son integrables en $[a,b]$, entonces $f+g$ y $f-g$ son integrables en $[a,b]$ y 
+\begin{center}
+    $\int_a^b (f(x) \pm g(x)) \, dx = \int_a^b f(x) \, dx \pm \int_a^b g(x) \, dx$
+\end{center}
+\end{theorem}
+\end{framed}
+
+\begin{framed}
+\begin{theorem}
+Si $a < c < b$ y $f$ es integrable en $[a,c]$ y en $[c,b]$, entonces $f$ es integrable en $[a,b]$ y 
+\begin{center}
+    $\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x) dx$
+\end{center}
+\end{theorem}
+\end{framed}
+
+\begin{framed}
+\begin{theorem}
+Si $f$ es integrable en $[a,b]$ y $f(x) \geq 0$ para todo $x$ en $[a,b]$, entonces 
+\begin{center}
+    $\int_a^b f(x) dx \geq 0$
+\end{center}
+\end{theorem}
+\end{framed}
+
+
+
+\end{document}
